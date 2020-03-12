@@ -15,11 +15,44 @@
     <script type="text/javascript">
         var wins = 0;
         var losses = 0;
+        var lettersGuessed = [];
+        var lettersLeft = words.length;
+        var guessesLeft = 12;
 
         var directionsText = document.getElementById("directions-text");
         var userText = document.getElementById("userchoice-text");
         var winsText = document.getElementById("wins-text");
         var lossesText = document.getElementById("losses-text");
+
+        var emptySpot = document.getElementById("empty-spot")
+        var words = ["belmont", "dracula", "alucard", "death", "medusa", "trevor", "simon", "carmilla", "sypha",
+            "grant", "frankenstein", "slogra", "gaibon", "golem", "legion", "mummy", "hector", "isaac"];
+        var words = words[Math.floor(Math.random() * words.length)];
+
+        function makeEmptyArray(arr) {
+            var emptyArray = [];
+            
+            for (var i = 0); i < arr.length; i ++) {
+                emptyArray.push('_');
+                emptySpot.textContent("")
+                                //what goes in here?
+            }
+        
+            return emptyArray;
+        }
+        
+        document.onkeyup = function (event) {
+            console.log(event.key);
+            if (event.key !== 'a') {
+                alert("Please choose a letter")
+            } else if (words.includes(event.key)) {
+                        //what goes in here?
+            } else {
+                console.log("-1 hp");
+                guessesLeft --;
+            }
+        }
+
     </script>
 
 </body>
