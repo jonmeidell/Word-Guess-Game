@@ -17,7 +17,7 @@
         var losses = 0;
         var lettersGuessed = [];
         var guessesLeft = 12;
-
+        var alphabet = "abcdefghijklmnopqrstuvwxyz";
         var directionsText = document.getElementById("directions-text");
         var userText = document.getElementById("userchoice-text");
         var winsText = document.getElementById("wins-text");
@@ -51,6 +51,11 @@
             //check if key already pressed
             
             console.log(event.key);
+            if (alphabet.includes(event.key) && word.includes(event.key) ){
+                console.log(word + " contains the letter " + event.key);
+            } else {
+                console.log(word + " doesn not contain " + event.key);
+            }
             if (event.key !== 'a') {
                 alert("Please choose a letter")
             } else if (word.includes(event.key)) {
