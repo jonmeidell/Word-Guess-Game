@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Castlevania Hangman</title>
 </head>
 
 <body>
@@ -16,7 +16,6 @@
         var wins = 0;
         var losses = 0;
         var lettersGuessed = [];
-        var lettersLeft = words.length;
         var guessesLeft = 12;
 
         var directionsText = document.getElementById("directions-text");
@@ -28,22 +27,25 @@
         var words = ["belmont", "dracula", "alucard", "death", "medusa", "trevor", "simon", "carmilla", "sypha",
             "grant", "frankenstein", "slogra", "gaibon", "golem", "legion", "mummy", "hector", "isaac"];
         var word = words[Math.floor(Math.random() * words.length)];
-
+        var lettersLeft = word.length;
+        var emptyArray = [];
         function makeEmptyArray(arr) {
-            var emptyArray = [];
+
             
             for (var i = 0; i < arr.length; i ++) {
                 emptyArray.push('_');
-                emptySpot.textContent("");
-                                //what goes in here?
+                // emptySpot.textContent("");
             }
         
             return emptyArray;
         }
-        
+        makeEmptyArray(word);
+        console.log(word);
+        console.log(emptyArray);
+
         document.onkeyup = function (event) {
             //Google keycode for lower case letters
-            // store the key in a var
+            //store the key in a var
             //store the keycode
             //validate the key pressed
             //check if key already pressed
@@ -52,7 +54,6 @@
             if (event.key !== 'a') {
                 alert("Please choose a letter")
             } else if (word.includes(event.key)) {
-                        //what goes in here?
             } else {
                 console.log("-1 hp");
                 guessesLeft --;
