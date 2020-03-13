@@ -27,14 +27,14 @@
         var emptySpot = document.getElementById("empty-spot")
         var words = ["belmont", "dracula", "alucard", "death", "medusa", "trevor", "simon", "carmilla", "sypha",
             "grant", "frankenstein", "slogra", "gaibon", "golem", "legion", "mummy", "hector", "isaac"];
-        var words = words[Math.floor(Math.random() * words.length)];
+        var word = words[Math.floor(Math.random() * words.length)];
 
         function makeEmptyArray(arr) {
             var emptyArray = [];
             
             for (var i = 0; i < arr.length; i ++) {
                 emptyArray.push('_');
-                emptySpot.textContent("")
+                emptySpot.textContent("");
                                 //what goes in here?
             }
         
@@ -42,10 +42,16 @@
         }
         
         document.onkeyup = function (event) {
+            //Google keycode for lower case letters
+            // store the key in a var
+            //store the keycode
+            //validate the key pressed
+            //check if key already pressed
+            
             console.log(event.key);
             if (event.key !== 'a') {
                 alert("Please choose a letter")
-            } else if (words.includes(event.key)) {
+            } else if (word.includes(event.key)) {
                         //what goes in here?
             } else {
                 console.log("-1 hp");
