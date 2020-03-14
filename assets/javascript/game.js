@@ -28,13 +28,56 @@ makeEmptyArray(word);
 console.log(word);
 console.log(emptyArray);
 
+
+function gameState() {
+    if (!emptyArray.includes("_") && guessesLeft >= 0) {
+        console.log("You've won the game!");
+        wins += 1;
+    } else if (guessesLeft <= -1) {
+        console.log("Try harder, loser!")
+    }
+}
+
+function newWord() {
+    word = words[Math.floor(Math.random() * words.length)];
+    emptyArray = [];
+    lettersGuessed = [];
+    guessesLeft = 12;
+    makeEmptyArray(word);
+}
+
 document.onkeyup = function (event) {
 
+    if (alphabet.includes(event.key) && !lettersGuessed.includes(event.key)) {guessesLeft -= 1}
+                            // keeps taking away
+    document.getElementById("wins-text").innerHTML = "Wins: " + wins;
+    document.getElementById("losses-text").innerHTML = "Losses: " + losses;
+    document.getElementById("guesses-left").innerHTML = "Guesses left: " + guessesLeft;
+
     console.log(event.key);
-    if (alphabet.includes(event.key) && word.includes(event.key)) {
+    if (alphabet.includes(event.key) && word.includes(event.key) && !lettersGuessed.includes(event.key)) {
         console.log(word + " contains the letter " + event.key);
+        lettersGuessed.push(event.key);
+        var indexes = []
+        for (var i = 0; i < word.length; i++) {
+            if (word[i] === event.key) {
+                indexes.push(i)
+            }
+        }
+        indexes.forEach(function(item) {
+            emptyArray.splice(item, 1, event.key);      
+        }) 
+        gameState();
+        console.log(emptyArray);
+        console.log(indexes);
+        console.log(guessesLeft);
+
+    } else if (lettersGuessed.includes(event.key)) {
+        console.log("You've already guessed " + event.key)
+        gameState();
     } else {
-        console.log(word + " doesn not contain " + event.key);
+        console.log(word + " does not contain " + event.key);
+        gameState();
     }
     
 }
