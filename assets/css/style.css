@@ -1,1 +1,10 @@
-font-family: 'Trade Winds', cursive;
+body {
+    font-family: 'Trade Winds', cursive;
+    background-image: url("../images/startpage.jpg");
+    color: whitesmoke;
+}
+
+.container {
+    background-color: lightseagreen;
+    font-family: 'Trade Winds';    
+}
