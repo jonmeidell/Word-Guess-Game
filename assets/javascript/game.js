@@ -1,7 +1,7 @@
 var wins = 0;
 var losses = 0;
 var lettersGuessed = [];
-var guessesLeft = 12;
+var guessesLeft = 10;
 var alphabet = "abcdefghijklmnopqrstuvwxyz";
 var directionsText = document.getElementById("directions-text");
 var letters = document.getElementById("letters-guessed");
@@ -47,7 +47,7 @@ function newWord() {
     word = words[Math.floor(Math.random() * words.length)];
     emptyArray = [];
     lettersGuessed = [];
-    guessesLeft = 12;
+    guessesLeft = 10;
     makeEmptyArray(word);
     document.getElementById("guesses-left").innerHTML = "Guesses left: " + guessesLeft;
     document.getElementById("empty-array").innerHTML;
