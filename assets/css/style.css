@@ -15,8 +15,8 @@ body {
 #box {
     background-color: whitesmoke;
     opacity: 50%;
-    width: 700px;
-    height: 490px;
+    width: 300px;
+    height: 300px;
     margin: 10px 10px 30px 100px;
     color: rgb(192, 30, 30);
     padding: 25px 30px 10px;
@@ -25,3 +25,8 @@ body {
     border-color: black;
 }
 
+#picture {
+    padding: 0;
+    margin: auto;
+    border-radius: 10px;
+}

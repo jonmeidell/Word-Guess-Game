@@ -13,40 +13,34 @@
 </head>
 
 <body>
+    <div class="row">
+        <div id="box" class="col-md-4 container-fluid">
+            <form>
+                <div>
+                    <p id="directions-text">Press any letter to start guessing!</p>
+                </div>
 
-    <div id="box" class="col-lg-9">
-        <form>
-            <div>
-                <p id="directions-text">Press any letter to start guessing!</p>
-            </div>
+                <div>
+                    <p id="empty-array"></p>
+                </div>
 
-            <div>
-                <p id="empty-array"></p>
-                <!-- // not showing word -->
-            </div>
+                <div>
+                    <p id="wins-text">Wins: </p>
+                    <p id="losses-text">Losses: </p>
+                    <p id="guesses-left">Guesses left: 10</p>
+                    <p id="letters-guessed">Guesses: </p>
+                </div>
 
-            <div>
-                <p id="wins-text">Wins: </p>
-                <!-- // not showing -->
-                <p id="losses-text">Losses: </p>
-                <!-- // not showing -->
-                <p id="guesses-left">Guesses left: 10</p>
-                <!-- // not counting properly -->
-                <p id="letters-guessed">Guesses: </p>
-                <!-- // not showing -->
-            </div>
+                <div>
+                    <button onclick="newWord()">New word</button>
+                </div>
 
-            <div>
-                <button onclick="newWord()">New word</button>
-            </div>
-
-        </form>
+            </form>
+        </div>
+        <img id="picture" class="col-md-8 container-fluid" src="">
     </div>
 
-    <img id="picture" src="">
-
     <script src="./assets/javascript/game.js"></script>
-
 
 </body>
 
