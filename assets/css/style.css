@@ -27,6 +27,15 @@ body {
 
 #picture {
     padding: 0;
-    margin: auto;
+    margin: 10px auto;
     border-radius: 10px;
+    height: 300px;
+    width: auto;
+}
+
+#newWord {
+    background-color: crimson;
+    border-radius: 5px;
+    border-color: black;
+    border: 1px solid;
 }
