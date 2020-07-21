@@ -1,6 +1,7 @@
 <div align="center">
 
-# Castlevania Hangman game
+![Castlevania Logo](https://jonmeidell.github.io/assets/images/castlevania-logo.png)
+# Hangman game
 ![Welcome!](https://jonmeidell.github.io/Castlehangia-Man/assets/images/gameover.jpg)
 </div>
 
