@@ -1,5 +1,8 @@
+<div align="center">
+
 # Castlevania Hangman game
 ![Welcome!](https://jonmeidell.github.io/Castlehangia-Man/assets/images/gameover.jpg)
+</div>
 
 ### How to play:
 
@@ -13,6 +16,8 @@ _Uses Javascript to have random words chosen.  Resizes and displays an associate
   * _getting the word box into the desired location on screen_
     * try to get box and picture area to be centered on page
 
-#### Good luck in your journey through Wallachia!
-
+<div align="center" style="color:red">
+ 
+## Good luck in your journey through Wallachia!
 ![Castle Gate](https://jonmeidell.github.io/assets/images/castlevania.gif)
+</div>
