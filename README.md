@@ -16,8 +16,10 @@ _Uses Javascript to have random words chosen.  Resizes and displays an associate
   * _getting the word box into the desired location on screen_
     * try to get box and picture area to be centered on page
 
-<div align="center" style="color:red">
- 
+<div align="center">
+<p style="color:red">
+
 ## Good luck in your journey through Wallachia!
 ![Castle Gate](https://jonmeidell.github.io/assets/images/castlevania.gif)
+</p>
 </div>
