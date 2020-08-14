@@ -1,7 +1,7 @@
 <div align="center">
 
 ![Castlevania Logo](https://jonmeidell.github.io/assets/images/castlevania-logo.png)
-# `Hangman game`
+# `Hangman Game`
 ![Welcome!](https://jonmeidell.github.io/Castlehangia-Man/assets/images/gameover.jpg)
 </div>
 
