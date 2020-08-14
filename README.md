@@ -13,7 +13,7 @@
 
 _Uses Javascript to have random words chosen.  Resizes and displays an associated picture of the word guessed once completed.  Keeps track of wins and losses accumulated throughout the session playthrough; (session will clear out after site is left or refreshed)._
 
-#### Improvements to be made:
+#### `Improvements to be made:`
   * _getting the word box into the desired location on screen_
     * try to get box and picture area to be centered on page
 
